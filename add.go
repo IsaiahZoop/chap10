@@ -70,3 +70,11 @@ func Add[T Number](a, b T) T {
 // To remove tag from GitHub remotely: git push --delete origin v2.0.0
 // To re-add tag: git tag v2.0.0
 // To push tag: git push origin v2.0.0
+
+// To push everything from this directory run...
+/*
+git add .
+git commit -m "Pushed all updates"
+git push origin main
+git push --tags
+*/
