@@ -45,12 +45,18 @@ package add
 import "golang.org/x/exp/constraints"
 
 // Number is a generic type constraint that accepts both Integer and Float types.
+// | (pipe operator): Allows you to combine multiple constraints.
+// It means that the Number interface accepts types that either match integer or float here.
 type Number interface {
 	constraints.Integer | constraints.Float
 }
 
-// Add adds two values of type Number and returns their sum.
+// This function uses Go generics to work with different types (integers and floats).
+// It ensures that only integer and floating-point types can be passed as arguments, thanks to the Number interface.
+// Add is a generic function that takes in two parameters of type T,
+// where T must satisfy the Number interface (either an integer or a float).
 func Add[T Number](a, b T) T {
+	// The function returns the sum of a and b, both of type T.
 	return a + b
 }
 
@@ -59,3 +65,8 @@ func Add[T Number](a, b T) T {
 // git tag v2.0.0
 // git push origin main
 // git push origin v2.0.0
+
+// To remove tag localled: git tag -d v2.0.0
+// To remove tag from GitHub remotely: git push --delete origin v2.0.0
+// To re-add tag: git tag v2.0.0
+// To push tag: git push origin v2.0.0
