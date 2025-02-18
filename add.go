@@ -61,10 +61,12 @@ func Add[T Number](a, b T) T {
 }
 
 // Run
-// git commit -m "Refactored Add to be generic using Number interface"
-// git tag v2.0.0
-// git push origin main
-// git push origin v2.0.0
+/*
+git commit -m "Refactored Add to be generic using Number interface"
+git tag v2.0.0
+git push origin main
+git push origin v2.0.0
+*/
 
 // To remove tag localled: git tag -d v2.0.0
 // To remove tag from GitHub remotely: git push --delete origin v2.0.0
