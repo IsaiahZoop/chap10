@@ -13,6 +13,7 @@ func Add(a, b int) int {
 
 // Run
 /*
+git add .
 git commit -m "Added Add function"
 git tag v1.0.0
 git push origin main
@@ -34,6 +35,7 @@ func Add(a, b int) int {
 
 // Run
 /*
+git add .
 git commit -m "Added godoc comments to Add function"
 git tag v1.0.1
 git push origin main
@@ -67,6 +69,7 @@ func Add[T Number](a, b T) T {
 */
 // Run
 /*
+git add .
 git commit -m "Refactored Add to be generic using Number interface"
 git tag v2.0.0
 git push origin main
