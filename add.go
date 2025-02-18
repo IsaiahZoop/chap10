@@ -1,10 +1,10 @@
 // *EXERCISE 1*
-/*package add
+package add
 
 // Add is a function that takes in two integer values and returns their sum.
 func Add(a, b int) int {
 	return a + b
-}*/
+}
 
 // Created repository
 // Cloned the repo to my local machine using git clone https://github.com/IsaiahZoop/chap10.git
@@ -12,10 +12,12 @@ func Add(a, b int) int {
 // go get github.com/IsaiahZoop/chap10@v1.0.0
 
 // Run
-//git commit -m "Added Add function"
-//git tag v1.0.0
-//git push origin main
-//git push origin v1.0.0
+/*
+git commit -m "Added Add function"
+git tag v1.0.0
+git push origin main
+git push origin v1.0.0
+*/
 
 // ---------------------------------------------------------------------------------------------
 
@@ -31,15 +33,18 @@ func Add(a, b int) int {
 }*/
 
 // Run
-// git commit -m "Added godoc comments to Add function"
-// git tag v1.0.1
-// git push origin main
-// git push origin v1.0.1
+/*
+git commit -m "Added godoc comments to Add function"
+git tag v1.0.1
+git push origin main
+git push origin v1.0.1
+*/
 
 // ---------------------------------------------------------------------------------------------
 
 // *EXERCISE 3*
 // Package chap10 provides basic math operations with support for generics.
+/*
 package add
 
 import "golang.org/x/exp/constraints"
@@ -59,7 +64,7 @@ func Add[T Number](a, b T) T {
 	// The function returns the sum of a and b, both of type T.
 	return a + b
 }
-
+*/
 // Run
 /*
 git commit -m "Refactored Add to be generic using Number interface"
